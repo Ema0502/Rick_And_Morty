@@ -42,12 +42,12 @@ function Card({
       <button className={style.closeButton} onClick={() => onClose(id)}>
         X
       </button>
-      <img src={image} alt="" className={style.image} />
+      <img src={image} alt="" className={style.imageIcon} />
       <Link to={`/detail/${id}`}>
-        <h2>{name}</h2>
+        <h3>{name}</h3>
       </Link>
-      <h2>{species}</h2>
-      <h2>{gender}</h2>
+      <h3>{species}</h3>
+      <h3>{gender}</h3>
     </div>
   );
 }
